@@ -1,0 +1,257 @@
+{% load static %}
+
+<head>
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .box {
+            /* max-width: 400px; */
+            width: 100%;
+            /* z-index: 9; */
+            /* position: relative; */
+            padding-bottom: 10em;
+        }
+        
+        .box .serachbox {
+            max-width: 65px;
+            margin: auto;
+            position: relative;
+            height: 50px;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, .7);
+            border-radius: 30px;
+            transition: .5s;
+        }
+        
+        .serachbox input {
+            width: 100%;
+            height: 100%;
+            /* position: absolute; */
+            border: 0;
+            border-radius: 30px;
+            padding-left: 20px;
+        }
+        
+        .btn {
+            width: 50px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #fff;
+            height: 100%;
+            color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        
+        #label {
+            display: none;
+        }
+        
+        #label:checked~.serachbox {
+            max-width: 380px;
+        }
+        
+        #label:checked~.serachbox .btn {
+            border-radius: 0px 30px 30px 0px;
+            margin-right: 0;
+            color: black;
+        }
+        
+        input:focus {
+            border: none;
+            outline: none;
+        }
+        
+        @media only screen and (min-width: 600px) {
+            #newsearch {
+                display: none;
+            }
+            div.box {
+                display: ;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            div.box {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="img-fluid">
+        <!-- Carousel Bootstrap -->
+
+        <!-- <section class="carbg"> -->
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'media/slide1.png' %}" class="d-block w-100" alt="...">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="box">
+                            <form action="/searchbar/" method="POST" novalidate="novalidate">
+                                {% csrf_token %}
+                                <input type="checkbox" name="tag" id="label">
+                                <div class="serachbox">
+                                    <input type="text" name="searched" placeholder="Search">
+                                    <label for="label" class="btn">  
+                                        <i class="fas fa-search"></i>  
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <p>IIT Bombay — Mumbai, India</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'media/slide4.png' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="box">
+                            <form action="/searchbar/" method="POST" novalidate="novalidate">
+                                {% csrf_token %}
+                                <input type="checkbox" name="tag" id="label">
+                                <div class="serachbox">
+                                    <input type="text" name="searched" placeholder="Search">
+                                    <label for="label" class="btn">  
+                                        <i class="fas fa-search"></i>  
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <p>Bhartiya Vidya Bhavan's Sardar Patel Institute of Technology — Mumbai, India</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'media/slide2.png' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <div class="box">
+                            <form action="/searchbar/" method="POST" novalidate="novalidate">
+                                {% csrf_token %}
+                                <input type="checkbox" name="tag" id="label">
+                                <div class="serachbox">
+                                    <input type="text" name="searched" placeholder="Search">
+                                    <label for="label" class="btn">  
+                                        <i class="fas fa-search"></i>  
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <p>Flagler College — Florida, USA</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'media/slide3.png' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="box">
+                            <form action="/searchbar/" method="POST" novalidate="novalidate">
+                                {% csrf_token %}
+                                <input type="checkbox" name="tag" id="label">
+                                <div class="serachbox">
+                                    <input type="text" name="searched" placeholder="Search">
+                                    <label for="label" class="btn">  
+                                        <i class="fas fa-search"></i>  
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <p>Berry College - America</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'media/slide5.png' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <div class="box">
+                            <form action="/searchbar/" method="POST" novalidate="novalidate">
+                                {% csrf_token %}
+                                <input type="checkbox" name="tag" id="label">
+                                <div class="serachbox">
+                                    <input type="text" name="searched" placeholder="Search">
+                                    <label for="label" class="btn">  
+                                        <i class="fas fa-search"></i>  
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <p>Harvard University — Cambridge, Massachusetts</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
+    </div>
+    <!-- <div class="box" id="newsearch " style="display: none;">
+        <form action="/searchbar/" method="POST" novalidate="novalidate">
+            {% csrf_token %}
+            <input type="checkbox" name="tag" id="label">
+            <div class="serachbox">
+                <input type="text" name="searched" placeholder="Search">
+                <label for="label" class="btn">  
+                    <i class="fas fa-search"></i>  
+                </label>
+            </div>
+        </form>
+    </div> -->
+    <!-- New -->
+    <!-- <div class="bgimg box">
+        <form action="/searchbar/" method="POST" novalidate="novalidate">
+            {% csrf_token %}
+            <input type="checkbox" name="tag" id="label">
+            <div class="serachbox">
+                <input type="text" name="searched" placeholder="Search">
+                <label for="label" class="btn">  
+                    <i class="fas fa-search"></i>  
+                </label>
+            </div>
+        </form>
+    </div> -->
+    <!-- Original -->
+    <section class="search-sec " id="newsearch" style="background:#F7F7F7 ;">
+        <div class="container">
+            <form action="/searchbar/" method="POST" novalidate="novalidate">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-3 col-sm-12 p-0">
+
+                                {% csrf_token %}
+                                <input type="search" name="searched" class="form-control search-slt" placeholder="Search">
+                            </div>
+
+
+                            <!-- <div class="col-lg-2 col-md-3 col-sm-12 p-0">
+                                <button type="submit" name="submit" class="btn btn-primary wrn-btn">Search</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+</body>

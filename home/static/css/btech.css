@@ -1,0 +1,25 @@
+.btech {
+    position: absolute;
+    top: 3rem;
+}
+
+.btech h3 {
+    color: #ff7900;
+}
+
+.top {
+    padding: 1rem 0;
+}
+
+.top svg,
+.top>span {
+    color: rgb(6, 37, 179);
+}
+
+.top>span {
+    font-size: 1rem;
+}
+
+.top>span>span {
+    color: black;
+}

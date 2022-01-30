@@ -1,0 +1,10 @@
+.ranking {
+    position: absolute;
+    top: 5.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.ranking h1 {
+    color: #ff7900;
+}

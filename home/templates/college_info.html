@@ -1,0 +1,136 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>College 360</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/btech.css' %}" />
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="blog-details-inner">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <img src="{% static 'media/slide1.png' %}" class="d-block w-100" alt="...">
+                            <div class="jumbotron jumbotron-fluid bg-info text-white">
+
+                                <div class="container">
+                                    <h1 class="display-4">IIT Madras: Cutoff, Courses, Placement, Fees, Admission, Ranking</h1>
+
+                                </div>
+                            </div>
+                            <div>
+
+                                <h2>College Information</h2>
+                                <p>IIT Madras is the best engineering institute in India. The institute has been ranked at 1 by the NIRF for the past 5 years. IIT Madras offers a total of 121 courses including the BTech and Online degree programs. IIT Madras
+                                    BTech is the flagship program of the institute having an intake capacity of 877 seats. Admission to the program depends on the JEE Advanced exam scores and participation in the JoSAA counseling. IIT Madras Cutoff for
+                                    the BTech program ranges between 85-8000 in the JEE Advanced exam. Candidates applying for IIT Madras admission are charged an annual fee of INR 2.05 Lacs for the BTech program. Another program at the institute popular
+                                    amongst the aspirants is the IIT Madras Online Degree. The online degree includes BSc in Programming & Data Science and Diploma in Programming & Data Science. The fees for the program ranges between INR 50k to 1 Lac.
+                                </p>
+                                <p>In 2003, IIT Madras launched NPTEL (National Program on Technology Enhanced Learning). In a short period of time, this program grew in popularity among Indian students. The program included all IITs, which introduced a
+                                    series of videos based on courses from all engineering specializations. It is currently India's largest online repository of lectures. The platform includes videos and lectures on subjects such as engineering, basic
+                                    sciences, and selected humanities and social sciences.
+                                </p>
+                                <p>IIT Madras’s placement rate for the BTech program is 67% and 46% for the MTech program. The majority of the remaining percentages at IIT Madras opt for higher studies. For the year 2021, the institute received 20.5% more
+                                    job offers compared to the previous year. The total offers received were 1316. Similarly, IIT Madras received 186 PPOs which is 19.4% more than the previous year. The average salary package at IIT Madras is INR 20.58
+                                    LPA and the highest salary package is INR 70 LPA. For the current year, the major companies participating in the IIT Madras placements were Bajaj Auto, Goldman Sachs, and JP Morgan.</p>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad im veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip -->
+                                <!-- </p> -->
+                            </div>
+
+                            <div>
+                                <h2>College Reviews</h2>
+
+                                <div class="container">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Sr.NO</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Comment</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tablebody">
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark Otto</td>
+                                                <td>This is a nice College!!</td>
+                                                <td><button type="button" class="btn btn-sm btn-danger">Delete</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="container">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="name">Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Enter your Name">
+                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="comment">Comment</label>
+                                            <textarea class="form-control" id="comment" rows="3"></textarea>
+                                        </div>
+                                        <button id="add" class="btn btn-primary">Add Comment</button>
+                                        <!-- <button id="clear" class="btn btn-danger" onclick="clearstr()">Clear all comment</button> -->
+                                    </form>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+    </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="{% static 'js/feedback.js' %}"></script>
+</body>
+
+</html><span></span>
